@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ObjectUseState from './components/Immutable State/ObjectUseState';
+import ObjectUseState2 from './components/Immutable State/ObjectUseState2';
+import UseReducer from './components/UseReducer/UseReducer';
+import UseState from './components/UseState/UseState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <UseState />
+      <br />
+      <UseReducer />
+      <br />
+      <ObjectUseState />
+      <br />
+      <ObjectUseState2 />
     </div>
   );
 }
